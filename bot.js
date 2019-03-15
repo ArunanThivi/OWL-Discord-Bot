@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 //const guildMember = new Discord.GuildMember();
-const TOKEN = "/*Get TOKEN from Discord Developers Page*/";
+const TOKEN = "MzgyMjg3MDA4OTg4NTI4NjQw.D226NQ.MTJsxalo9chh1qfMzYDMH1gbyVQ";
 var emoji = new Array();
 client.on("ready", () => {
     console.log("I am ready!");
@@ -254,8 +254,8 @@ client.on("message", (message) => {
             "\nEmotes work too! Try it out!");
     }
     if (msg.startsWith("!addrole")) {
-       msg.channel.send(msg.channel.toString());
-	   /* if (message.channel == TextChannel) {
+       //msg.channel.send(msg.channel.toString());
+	    //if (message.channel == TextChannel) {
             //if (msg.substring(9)==("outlaws")) {
             if (message.content.substring(9) == (emoji[0].toString()) || msg.substring(9) == ("outlaws")) {
                 message.member.addRole(message.guild.roles.find("name", "Houston Outlaws"));
@@ -317,10 +317,7 @@ client.on("message", (message) => {
                 message.author.send("Your role has been set to **San Fransisco Shock**");
                 message.delete(1000)
             }
-        } else {
-            message.channel.send("This command must be used in a Server Text Channel");
-        }
-    */}
+    }
     
 	if (msg.startsWith("!removerole")) {
         if (message.content.substring(12) == (emoji[0].toString()) || msg.substring(12) == ("outlaws")) {
