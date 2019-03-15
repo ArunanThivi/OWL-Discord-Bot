@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 //const guildMember = new Discord.GuildMember();
-const TOKEN = "MzgyMjg3MDA4OTg4NTI4NjQw.D226NQ.MTJsxalo9chh1qfMzYDMH1gbyVQ";
+const TOKEN = "/*Get TOKEN from Discord Developers Page*/";
 var emoji = new Array();
 client.on("ready", () => {
     console.log("I am ready!");
